@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+    width :0
+}
+
+html {
+    @apply bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800;
+    @apply w-screen h-screen;
+}
+
+body {
+    @apply overflow-y-hidden;
+}
+
+.game-place-container {
+    @apply mx-auto rounded-b-3xl h-4/5 w-[371px] h-[600px];
+    @apply border-8 border-t-0 border-cyan-600 relative top-[15px];
+    /*@apply bg-gradient-to-r from-blue-900 via-blue-700 to-blue-900;*/
+}
+
+.game-place {
+    @apply w-full h-full rounded-[15px] mx-auto;
+}
+
+.points {
+    @apply mx-auto w-full text-white text-8xl font-bold text-center;
+    @apply my-5;
+}
+
+.spawn-place {
+    @apply h-[75px] w-full mx-auto;
+}
+
+.game-object {
+    @apply bg-blue-900 rounded-[15px] absolute;
+}
